@@ -28,9 +28,12 @@ const CampaignDetails = () => {
     if(contract) fetchDonators();
   }, [contract, address])
 
+  const isFundsCompleted = state.amountCollected >= state.target;
+
+
+
   const handleDonate = async () => {
     setIsLoading(true);
-
     await donate(state.pId, amount); 
 
     navigate('/')
@@ -119,11 +122,12 @@ const CampaignDetails = () => {
                 <p className="mt-[20px] font-epilogue font-normal leading-[22px] text-[#808191]">Support the project for no reward, just because it speaks to you.</p>
               </div>
 
-              <CustomButton 
+              <CustomButton
                 btnType="button"
                 title="Fund Campaign"
-                styles="w-full bg-[#8c6dfd]"
+                styles={`w-full bg-[#8c6dfd] ${isFundsCompleted ? 'cursor-not-allowed opacity-50' : ''}`}
                 handleClick={handleDonate}
+                disabled={isFundsCompleted}
               />
             </div>
           </div>
