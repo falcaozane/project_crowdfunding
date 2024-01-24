@@ -1,7 +1,2 @@
-# Build and Deploy a Web3 Crowdfunding Platform (Kickstarter) As Your First Blockchain Application
-![Crowdfunding](https://i.ibb.co/k6pj0Qt/htum-6.png)
-
-### [🌟 Become a top 1% Next.js 13 developer in only one course](https://jsmastery.pro/next13)
-### [🚀 Land your dream programming job in 6 months](https://jsmastery.pro/masterclass)
-
-### Launch your development career with project-based coaching on [JS Mastery Pro](https://www.jsmastery.pro).
+# Build and Deploy a Web3 Crowdfunding Platform Blockchain Application
+![Screenshot 2024-01-12 083845](https://github.com/falcaozane/project_crowdfunding/assets/112317470/e8cabcd0-f1a3-4e15-ae98-9164a9567f4d)
