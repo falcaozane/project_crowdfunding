@@ -7,8 +7,13 @@ const FundCard = ({ owner, title, description, target, deadline, amountCollected
   const remainingDays = daysLeft(deadline);
   
   return (
+<<<<<<< HEAD
     <div className="sm:w-[290px] w-full rounded-[15px] bg-[#1c1c24] cursor-pointer hover:border-green-400 hover:border-b-2" onClick={handleClick}>
       <img src={image} alt="fund" className="w-full h-[158px] object-cover rounded-[15px] hover:h-[170px]"/>
+=======
+    <div className="sm:w-[288px] w-full rounded-[15px] bg-[#1c1c24] cursor-pointer fundCard" onClick={handleClick}>
+      <img src={image} alt="fund" className="w-full h-[158px] object-cover rounded-[15px]"/>
+>>>>>>> 1bddc85dd92449fd71f8700e7ab504b28f575ac2
 
       <div className="flex flex-col p-4">
         <div className="flex flex-row items-center mb-[18px]">
@@ -17,7 +22,7 @@ const FundCard = ({ owner, title, description, target, deadline, amountCollected
         </div>
 
         <div className="block">
-          <h3 className="font-epilogue font-semibold text-[16px] text-white text-left leading-[26px] truncate">{title}</h3>
+          <h3 className="font-epilogue font-semibold text-[16px] text-theme text-left leading-[26px] truncate">{title}</h3>
           <p className="mt-[5px] font-epilogue font-normal text-[#808191] text-left leading-[18px] truncate">{description}</p>
         </div>
 
@@ -33,7 +38,7 @@ const FundCard = ({ owner, title, description, target, deadline, amountCollected
         </div>
 
         <div className="flex items-center mt-[20px] gap-[12px]">
-          <div className="w-[30px] h-[30px] rounded-full flex justify-center items-center bg-[#13131a]">
+          <div className="w-[30px] h-[30px] rounded-full flex justify-center items-center logo-theme">
             <img src={thirdweb} alt="user" className="w-1/2 h-1/2 object-contain"/>
           </div>
           <p className="flex-1 font-epilogue font-normal text-[12px] text-[#808191] truncate">by <span className="text-[#b2b3bd]">{owner}</span></p>

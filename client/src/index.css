@@ -4,6 +4,76 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --body_background: white;
+  --component_background: whitesmoke;
+  --btnBackground: gainsboro;
+  --textColor: white;
+  --logoBg: #2c2f32;
+  --boxContainer: #1c1c24;
+}
+*{
+  transition: all .5s ease-in-out;
+}
+[data-theme="dark"] {
+  --body_background: rgb(19 19 26);
+  --component_background: rgb(28 28 36);
+  --btnBackground: black;
+  --textColor: white;
+  --logoBg: #2c2f32;
+  --infoText: #13131a;
+  --boxContanier: #1c1c24;
+}
+[data-theme="light"] {
+  --body_background: white;
+  --component_background: whitesmoke;
+  --btnBackground: gainsboro;
+  --textColor: black;
+  --logoBg: gainsboro;
+  --infoText: gainsboro;
+  --boxContainer: whitesmoke;
+}
+
+body {
+  background-color: var(--body_background) !important;
+}
+.searchBox,
+.sideBar,
+.fundCard, .fundTheCampaignBox {
+  background-color: var(--component_background);
+}
+.text-theme{
+  color: var(--textColor);
+}
+.activeSidebarBtntrue, .toggleThemeBtn, .homeIcon {
+  background-color: var(--btnBackground);
+}
+
+.logo-theme{
+  background-color: var(--logoBg);
+}
+
+.infoText{
+  background-color: var(--infoText);
+}
+
+.countBoxValue{
+  background-color: var(--component_background);
+  color: var(--textColor);
+}
+
+.countBoxTitle{
+  background-color: var(--btnBackground);
+}
+
+.createCampaignBox{
+  background-color: var(--boxContainer);
+}
+
+
+
+
+
 .linear-gradient {
   background: linear-gradient(
     179.14deg,
